@@ -12,13 +12,20 @@ public class TriangleTest {
 	}
 
 	@Test
-    public void testTriangle() {
-       
+    public void testEquilateral() {
         assertEquals("equilateral", triangle.triangle(6,6,6));
+    }
+	
+	@Test
+    public void testIsosceles() {
         assertEquals("isosceles", triangle.triangle(5,5,6));
+    }
+	
+	@Test
+    public void testScalene() {
         assertEquals("scalene", triangle.triangle(3,4,6));
     }
-
+	
 
 
 
